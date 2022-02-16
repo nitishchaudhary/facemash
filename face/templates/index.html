@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facemash</title>
+    <link rel = 'stylesheet' , href ={% static 'style.css' %} >
+
+</head>
+<body>
+    <div class = 'flex-container'>
+        <div class = 'header' >
+            <p>FACEMASH</p>
+        </div>
+
+        <div class = "content">
+           <font size = 4px><b>Lets see if you have to enough looks to stand out or NOT !!</b><br></font>
+           <font size = 5px><b> Who's Hotter ? Click to Choose</b></font>
+        </div>
+
+        <div class = " flex-container-1">
+            <div class = "images">
+                
+                    <a href = 'ChangeImage1'><img src = "{{image1}}" id = 'badge1'></a>
+                    <span>OR</span>
+                    <a href = 'ChangeImage2'><img src = "{{image2}}"  id = " badge2" ></a>
+                   
+            </div>
+        </div>
+
+        <div class = 'footer'>
+            <ul>
+               <a href = "about" style = "text-decoration: none; color:white"><li>About</li></a>
+               <a href = "ranking" style = "text-decoration: none; color:white"><li>Rankings</li>
+                <li>Previous</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <script src = {% static "script.js" %}></script> -->
+</body>
+</html>

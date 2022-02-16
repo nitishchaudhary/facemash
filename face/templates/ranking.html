@@ -1,0 +1,24 @@
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' , href ={% static 'style.css' %} >
+</head>
+<body>
+    <div class = 'flex-container-2'>
+        <div class = 'header-2' >
+            <p>FACEMASH</p>
+        </div>
+        <div class = "ranking">
+            <ol type="1">
+                {% for i in objects %}
+                     <li></li><img src = {{i.img.url}}><br>
+                {% endfor %}
+            </ol>
+
+        </div>
+    </div>
+</body>
+</html>
